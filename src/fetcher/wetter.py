@@ -18,6 +18,11 @@ class GridForecast:
 
 
 def build_grid_points(polygon_geojson: dict, step_deg: float = 0.1) -> list[tuple[float, float]]:
+    """Build a lat/lon grid of points inside the given polygon.
+
+    Uses strict containment (shapely .contains) — boundary points are excluded.
+    Returns (lat, lon) tuples rounded to 4 decimals (≈ 10 m precision at 49°N).
+    """
     geom = shape(polygon_geojson["geometry"])
     minx, miny, maxx, maxy = geom.bounds
     lat = miny
@@ -33,6 +38,11 @@ def build_grid_points(polygon_geojson: dict, step_deg: float = 0.1) -> list[tupl
 
 
 def parse_openmeteo_response(raw: dict) -> GridForecast:
+    """Parse an Open-Meteo forecast response dict into a typed GridForecast.
+
+    Tolerates missing 'hourly' block, missing/None arrays, and null values
+    inside arrays (coerced to 0.0 mm / 0 % cloud cover).
+    """
     h = raw.get("hourly", {}) or {}
     times = h.get("time", []) or []
     precs = h.get("precipitation", []) or []
@@ -49,6 +59,12 @@ def parse_openmeteo_response(raw: dict) -> GridForecast:
 
 
 def aggregate_area_mean(grids: list[GridForecast]) -> GridForecast:
+    """Combine per-point forecasts into a catchment-mean forecast.
+
+    Uses the first grid's hour index as reference and filters to grids that
+    cover each hour. Computes mean precip, max precip, and mean cloud cover
+    per hour index. Returns an empty GridForecast if `grids` is empty.
+    """
     if not grids:
         return GridForecast(hours=[])
     ref = grids[0].hours

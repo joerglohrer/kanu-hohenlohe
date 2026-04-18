@@ -15,6 +15,8 @@ def test_build_grid_points_returns_inside_polygon_only():
         ]]},
     }
     pts = build_grid_points(polygon, step_deg=0.1)
+    # shapely .contains is strict; for a 0.2°×0.2° polygon at 0.1° step only
+    # the interior (10.1, 49.1) is guaranteed. Proves containment logic, not density.
     assert len(pts) >= 1
     for lat, lon in pts:
         assert 49.0 <= lat <= 49.2
