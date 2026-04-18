@@ -3,7 +3,7 @@ const fmtTime = (ts) => new Date(ts).toLocaleString("de-DE",
   {day:"2-digit", month:"2-digit", hour:"2-digit", minute:"2-digit"});
 
 async function loadStatus() {
-  const res = await fetch(`../data/status.json?t=${Date.now()}`, { cache: "no-store" });
+  const res = await fetch(`./data/status.json?t=${Date.now()}`, { cache: "no-store" });
   if (!res.ok) throw new Error("status.json missing");
   return res.json();
 }
@@ -45,7 +45,7 @@ async function renderChart() {
   try {
     const now = new Date();
     const y = now.getUTCFullYear(), m = String(now.getUTCMonth()+1).padStart(2,"0");
-    const res = await fetch(`../data/hvz/doerzbach/${y}/${m}.json`, { cache: "no-store" });
+    const res = await fetch(`./data/hvz/doerzbach/${y}/${m}.json`, { cache: "no-store" });
     if (!res.ok) return;
     const rows = await res.json();
     const cut = Date.now() - 14 * 86400 * 1000;
