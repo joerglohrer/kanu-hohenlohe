@@ -8,7 +8,7 @@ import requests
 
 from src.config import load_config
 from src.engine.ampel import compute_ampel, DayInput
-from src.fetcher.hvz import parse_hvz_response, compute_tendenz_cm_per_h
+from src.fetcher.hvz import fetch_hvz_live, parse_hvz_response, compute_tendenz_cm_per_h
 from src.fetcher.wetter import (
     build_grid_points, parse_openmeteo_response, aggregate_area_mean,
 )
@@ -18,8 +18,8 @@ from src.notify.telegram import should_push, compose_message, send_push, PushDec
 
 
 def fetch_hvz_raw(gauge_id: str) -> dict:
-    """Live HVZ fetch — wired in Task 10."""
-    raise NotImplementedError("fetch_hvz_raw is wired in Task 10")
+    """Live HVZ fetch via JS stammdaten scraping (see src.fetcher.hvz.fetch_hvz_live)."""
+    return fetch_hvz_live(gauge_id)
 
 
 def fetch_openmeteo_raw(lat: float, lon: float) -> dict:
