@@ -64,3 +64,26 @@ def test_send_push_uses_env_and_posts():
         assert "T" in args[0]  # bot token in URL
         assert kwargs["json"]["chat_id"] == "C"
         assert kwargs["json"]["text"] == "hallo"
+
+def test_rate_limit_allows_at_12h_boundary(tmp_path):
+    cur = tmp_path / "status.json"; prv = tmp_path / "status.prev.json"
+    cur.write_text(json.dumps(_status(["gruen", "gruen", "gruen"])))
+    prv.write_text(json.dumps(_status(["gelb", "gelb", "gelb"])))
+    at_boundary = NOW - timedelta(hours=12)
+    d = should_push(cur, prv, last_push_ts=at_boundary, now=NOW)
+    assert d.kind == PushDecision.GREEN_WINDOW
+
+def test_should_push_tolerates_day_without_stufe_key(tmp_path):
+    cur = tmp_path / "status.json"; prv = tmp_path / "status.prev.json"
+    # malformed: days contain entries without "stufe"
+    cur.write_text(json.dumps({"days": [{"emoji": "🛶"}]}))
+    prv.write_text(json.dumps({"days": []}))
+    d = should_push(cur, prv, last_push_ts=None, now=NOW)
+    # no crash; neither green nor rate-limited → NONE
+    assert d.kind == PushDecision.NONE
+
+def test_send_push_raises_when_env_missing():
+    with patch.dict("os.environ", {}, clear=True):
+        import pytest
+        with pytest.raises(RuntimeError, match="TELEGRAM_BOT_TOKEN"):
+            send_push("hi")
