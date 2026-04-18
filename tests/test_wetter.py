@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from src.fetcher.wetter import (
     build_grid_points, parse_openmeteo_response, aggregate_area_mean, GridForecast,
+    parse_openmeteo_multi_response,
 )
 
 FIX = Path(__file__).parent / "fixtures"
@@ -40,3 +41,22 @@ def test_aggregate_area_mean():
     agg = aggregate_area_mean([g1, g2])
     assert agg.hours[0].precip_mm == 3.0
     assert agg.hours[0].max_precip_mm == 4.0
+
+
+def test_parse_openmeteo_multi_response_single_dict():
+    raw = {"hourly": {"time": ["2026-04-18T12:00"],
+                      "precipitation": [0.5],
+                      "cloud_cover": [40]}}
+    grids = parse_openmeteo_multi_response(raw)
+    assert len(grids) == 1
+    assert grids[0].hours[0].precip_mm == 0.5
+
+
+def test_parse_openmeteo_multi_response_list():
+    raw = [
+        {"hourly": {"time": ["2026-04-18T12:00"], "precipitation": [0.5], "cloud_cover": [40]}},
+        {"hourly": {"time": ["2026-04-18T12:00"], "precipitation": [1.5], "cloud_cover": [60]}},
+    ]
+    grids = parse_openmeteo_multi_response(raw)
+    assert len(grids) == 2
+    assert grids[1].hours[0].precip_mm == 1.5

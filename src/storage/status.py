@@ -18,6 +18,7 @@ def write_status(
     regen_24h_mean_mm: float,
     regen_24h_max_mm: float,
     days: list[DayResult],
+    weather_stale: bool = False,
 ) -> None:
     """Write the single-source-of-truth status JSON for the frontend.
 
@@ -33,6 +34,7 @@ def write_status(
         "hmo_stufe_1_cm": hmo_stufe_1_cm,
         "regen_24h_mean_mm": regen_24h_mean_mm,
         "regen_24h_max_mm": regen_24h_max_mm,
+        "weather_stale": weather_stale,
         "days": [
             {
                 "day": d.day.isoformat(),

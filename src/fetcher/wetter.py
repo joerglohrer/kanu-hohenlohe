@@ -1,7 +1,10 @@
 # src/fetcher/wetter.py
+import time
 from dataclasses import dataclass
 from datetime import datetime
 from shapely.geometry import shape, Point
+
+import requests
 
 
 @dataclass(frozen=True)
@@ -56,6 +59,55 @@ def parse_openmeteo_response(raw: dict) -> GridForecast:
         for t, p, c in zip(times, precs, clouds)
     ]
     return GridForecast(hours=hours)
+
+
+def fetch_openmeteo_batch(
+    points: list[tuple[float, float]],
+    timezone: str = "Europe/Berlin",
+    forecast_days: int = 7,
+    timeout: int = 30,
+    retries: int = 3,
+) -> list[GridForecast]:
+    """Fetch forecast for all points in ONE HTTPS request. Retries with backoff.
+
+    Raises RuntimeError on final failure — callers should catch and degrade.
+    """
+    if not points:
+        return []
+    lats = ",".join(f"{lat:.4f}" for lat, _ in points)
+    lons = ",".join(f"{lon:.4f}" for _, lon in points)
+    url = "https://api.open-meteo.com/v1/forecast"
+    params = {
+        "latitude": lats,
+        "longitude": lons,
+        "hourly": "precipitation,cloud_cover",
+        "forecast_days": forecast_days,
+        "timezone": timezone,
+    }
+    backoff = [0, 2, 5]
+    last_err = None
+    for attempt in range(retries):
+        if backoff[attempt]:
+            time.sleep(backoff[attempt])
+        try:
+            r = requests.get(
+                url, params=params, timeout=timeout,
+                headers={"User-Agent": "kanu-hohenlohe/0.1"},
+            )
+            r.raise_for_status()
+            return parse_openmeteo_multi_response(r.json())
+        except (requests.Timeout, requests.ConnectionError, requests.HTTPError) as e:
+            last_err = e
+    raise RuntimeError(f"Open-Meteo unreachable after {retries} attempts: {last_err}")
+
+
+def parse_openmeteo_multi_response(raw) -> list[GridForecast]:
+    """Parse multi-location Open-Meteo response into one GridForecast per location.
+
+    Single-location responses are dicts; multi-location are lists.
+    """
+    items = raw if isinstance(raw, list) else [raw]
+    return [parse_openmeteo_response(item) for item in items]
 
 
 def aggregate_area_mean(grids: list[GridForecast]) -> GridForecast:
