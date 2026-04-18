@@ -1,0 +1,16 @@
+{
+  "type": "Feature",
+  "properties": {"name": "Obere Jagst oberhalb Dörzbach"},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[
+      [10.33, 49.06],
+      [10.33, 49.37],
+      [9.79, 49.37],
+      [9.79, 49.24],
+      [10.00, 49.16],
+      [10.20, 49.06],
+      [10.33, 49.06]
+    ]]
+  }
+}
