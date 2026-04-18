@@ -2,6 +2,7 @@
 import json
 from datetime import datetime, date, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -39,7 +40,7 @@ def fetch_openmeteo_raw(lat: float, lon: float) -> dict:
 
 def send_push_if_needed(status_path: Path, prev_path: Path, last_push_path: Path,
                         now: datetime) -> None:
-    """Check should_push and dispatch Telegram send when a positive transition occurs."""
+    """Read .last_push ts and send a Telegram push if should_push decides GREEN_WINDOW."""
     last_ts = None
     if last_push_path.exists():
         last_ts = datetime.fromisoformat(last_push_path.read_text().strip())
@@ -87,14 +88,14 @@ def run(*, config_path: Path, data_dir: Path, catchment_path: Path,
     )
 
     # Compute ampel for today + next 7 days
-    today = now.date()
+    today = now.astimezone(ZoneInfo("Europe/Berlin")).date()
     days_out = []
     level = hvz_d.latest_level_cm or 0.0
     tend = compute_tendenz_cm_per_h([(m.ts, m.level_cm) for m in hvz_d.measurements])
 
     for offset in range(8):
         d = today + timedelta(days=offset)
-        regen_24h = sum(h.precip_mm for h in area.hours if h.ts.date() == d) if area.hours else 0.0
+        regen_24h = sum(h.precip_mm for h in area.hours if h.ts.date() == d) if area.hours else 0.0  # h.ts is naive Berlin-local
         fc_for_day = [p for p in hvz_d.forecast if p.ts.date() == d]
         level_day = fc_for_day[-1].level_cm if fc_for_day else level
         confidence = 1.0 if offset < 2 else max(0.0, 1.0 - (offset - 1) * 0.2)
