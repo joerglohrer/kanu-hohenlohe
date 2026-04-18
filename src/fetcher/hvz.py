@@ -32,10 +32,14 @@ def _parse_ts(s: str) -> datetime:
 
 
 def parse_hvz_response(raw: dict) -> HVZResult:
-    pegel = raw.get("pegel", {})
-    vals = raw.get("values", []) or []
-    fc = raw.get("forecast", []) or []
-    stamm = raw.get("stammdaten", {}) or {}
+    """Parse an HVZ API response dict (fixture or live) into a typed HVZResult.
+
+    Tolerates missing keys and explicit nulls (returns sensible defaults).
+    """
+    pegel = raw.get("pegel") or {}
+    vals = raw.get("values") or []
+    fc = raw.get("forecast") or []
+    stamm = raw.get("stammdaten") or {}
 
     measurements = [
         HVZMeasurement(

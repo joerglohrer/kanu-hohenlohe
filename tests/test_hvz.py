@@ -38,3 +38,12 @@ def test_compute_tendenz_cm_per_hour():
 def test_compute_tendenz_returns_zero_for_insufficient_data():
     from src.fetcher.hvz import compute_tendenz_cm_per_h
     assert compute_tendenz_cm_per_h([]) == 0.0
+
+def test_parse_tolerates_explicit_nulls():
+    raw = {"pegel": None, "values": None, "forecast": None, "stammdaten": None}
+    r = parse_hvz_response(raw)
+    assert r.gauge_id == ""
+    assert r.name == ""
+    assert r.measurements == []
+    assert r.forecast == []
+    assert r.hmo_stufe_1_cm is None
