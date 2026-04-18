@@ -6,7 +6,7 @@ from src.config import load_config, ConfigError
 FIXTURE = """
 gauges:
   doerzbach: "00061"
-  unterregenbach: "00069"
+  jagstzell: "00048"
 thresholds:
   min_cm: 40
   komfort_cm: 60
@@ -43,7 +43,7 @@ def test_load_config_rejects_komfort_below_min(tmp_path):
 
 def test_load_config_rejects_non_dict_gauges(tmp_path):
     p = tmp_path / "config.yaml"
-    p.write_text(FIXTURE.replace('gauges:\n  doerzbach: "00061"\n  unterregenbach: "00069"', 'gauges: "oops"'))
+    p.write_text(FIXTURE.replace('gauges:\n  doerzbach: "00061"\n  jagstzell: "00048"', 'gauges: "oops"'))
     with pytest.raises(ConfigError, match="gauges"):
         load_config(p)
 

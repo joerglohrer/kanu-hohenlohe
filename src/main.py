@@ -59,7 +59,7 @@ def run(*, config_path: Path, data_dir: Path, catchment_path: Path,
 
     # Fetch HVZ for both gauges
     hvz_raw_d = fetch_hvz_raw(cfg.gauges["doerzbach"])
-    hvz_raw_u = fetch_hvz_raw(cfg.gauges["unterregenbach"])
+    hvz_raw_u = fetch_hvz_raw(cfg.gauges["jagstzell"])
     hvz_d = parse_hvz_response(hvz_raw_d)
     hvz_u = parse_hvz_response(hvz_raw_u)
 
@@ -69,7 +69,7 @@ def run(*, config_path: Path, data_dir: Path, catchment_path: Path,
         [{"ts": m.ts.isoformat(), "w_cm": m.level_cm, "q_m3s": m.q_m3s} for m in hvz_d.measurements],
     )
     append_measurements(
-        data_dir / "hvz", "unterregenbach",
+        data_dir / "hvz", "jagstzell",
         [{"ts": m.ts.isoformat(), "w_cm": m.level_cm, "q_m3s": m.q_m3s} for m in hvz_u.measurements],
     )
 

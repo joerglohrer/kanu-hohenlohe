@@ -86,7 +86,7 @@ HVZ_Site.PEG_DB =
     assert len(r.measurements) == 1
     assert r.measurements[0].level_cm == 66.0
     assert r.measurements[0].q_m3s == 4.70
-    # HMO Stufe 1 = field[30] = 225 cm
-    assert r.hmo_stufe_1_cm == 225
+    # HMO Stufe 1 = field[24] (POS_HMO) = '2.20' m → 220 cm (Hochwassermeldeordnung Stufe 1)
+    assert r.hmo_stufe_1_cm == 220
     assert r.latest_level_cm == 66.0
     assert r.latest_ts is not None

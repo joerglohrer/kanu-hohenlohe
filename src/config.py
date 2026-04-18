@@ -55,8 +55,8 @@ def load_config(path: Path) -> Config:
     gauges = raw["gauges"]
     if not isinstance(gauges, dict):
         raise ConfigError("gauges must be a mapping")
-    if not {"doerzbach", "unterregenbach"} <= gauges.keys():
-        raise ConfigError("gauges must include doerzbach and unterregenbach")
+    if not {"doerzbach", "jagstzell"} <= gauges.keys():
+        raise ConfigError("gauges must include doerzbach and jagstzell")
 
     t = raw["thresholds"]
     if not isinstance(t, dict):

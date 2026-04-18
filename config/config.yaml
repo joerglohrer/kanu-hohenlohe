@@ -1,17 +1,12 @@
 gauges:
-  doerzbach: "00061"
-  # TODO: No HVZ gauge named "Unterregenbach" exists in Baden-Württemberg.
-  # The closest gauges on the Jagst are:
-  #   - Dörzbach (00061) upstream
-  #   - Elpershofen (00063) downstream
-  # 00069 = Untermünstertal/Neumagen (Freiburg area) — WRONG gauge; kept as
-  # placeholder so the orchestrator does not crash. Replace with 00063
-  # (Elpershofen) if a second Jagst reading is desired.
-  unterregenbach: "00063"   # Elpershofen/Jagst — nearest downstream substitute
+  doerzbach: "00061"              # Jagst pegel in Dörzbach (HVZ-ID)
+  jagstzell: "00048"              # Jagst upstream gauge ~176 m höher, 7–20 h Vorlaufzeit
 thresholds:
-  min_cm: 40
-  komfort_cm: 60
-  hochwasser_cm: 225        # HW-Stufe 1 from HVZ Stammdaten (Dörzbach/Jagst)
+  min_cm: 40                      # Mindestpegel für Befahrung Dörzbach→Schöntal (Hohenlohekreis)
+  komfort_cm: 60                  # Ausleitungen an den Wehren werden ab hier paddelbar
+  hochwasser_cm: 220              # HVZ Hochwassermeldeordnung Stufe 1 für Pegel Dörzbach
+                                  # Quelle: hvz_peg_stmn.js Feld-Index 24 (POS_HMO) = '2.20' m = 220 cm
+                                  # (nicht POS_HWB Index 30 = 225 cm, das ist der statistische HW-Richtwert)
   max_regen_24h_mm: 5.0
   max_anstieg_cm_per_h: 3.0
 catchment_geojson: "config/catchment.geojson"

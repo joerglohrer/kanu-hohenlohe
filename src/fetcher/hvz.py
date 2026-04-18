@@ -90,7 +90,8 @@ _POS_WZ = 6     # water level timestamp ('DD.MM.YYYY HH:MM MESZ')
 _POS_Q = 7      # current discharge value
 _POS_QD = 8     # discharge unit
 _POS_QZ = 9     # discharge timestamp
-_POS_HWB = 30   # HW-Stufe 1 threshold in cm (Hochwasserrichtwert 1)
+_POS_HMO = 24   # Hochwassermeldeordnung Stufe 1 in m (string, e.g. '2.20') — convert ×100 → cm
+_POS_HWB = 30   # Statistischer Hochwasserrichtwert 1 in cm (MHW / HHW-Stufe 1), NOT the Meldestufe
 
 
 def _parse_stmn_ts(s: str) -> datetime | None:
@@ -134,9 +135,13 @@ def _parse_stmn_record(row: list[str]) -> tuple[str, str, str, str | None, float
     q_raw = row[_POS_Q] if len(row) > _POS_Q else '--'
     q_m3s = _parse_float(q_raw) if q_raw and q_raw != '--' else None
 
+    # POS_HMO (index 24) holds the Hochwassermeldeordnung Stufe 1 in metres (e.g. '2.20').
+    # Multiply by 100 to convert to cm. Fall back to None if the field is absent or empty.
     hmo_cm: float | None = None
-    if len(row) > _POS_HWB:
-        hmo_cm = _parse_float(row[_POS_HWB])
+    if len(row) > _POS_HMO:
+        raw_hmo = _parse_float(row[_POS_HMO])
+        if raw_hmo is not None and raw_hmo > 0:
+            hmo_cm = raw_hmo * 100  # m → cm
 
     return gauge_id, name, gew, ts_iso, w_cm, q_m3s, hmo_cm
 
