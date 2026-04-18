@@ -1,0 +1,12 @@
+gauges:
+  doerzbach: "00061"
+  unterregenbach: "00069"   # to verify on first live run
+thresholds:
+  min_cm: 40
+  komfort_cm: 60
+  hochwasser_cm: null        # learned from HVZ Stammdaten on first live run
+  max_regen_24h_mm: 5.0
+  max_anstieg_cm_per_h: 3.0
+catchment_geojson: "config/catchment.geojson"
+cron:
+  timezone: "Europe/Berlin"
