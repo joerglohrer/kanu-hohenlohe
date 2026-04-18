@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-04-18T14:54:16.364498+00:00",
+  "latest_level_cm": 48.0,
+  "latest_q_m3s": 4.27,
+  "tendenz_cm_per_h": 0.0,
+  "hvz_stale": false,
+  "hvz_last_ts": "2026-04-18T16:45:00+02:00",
+  "hmo_stufe_1_cm": 220,
+  "regen_24h_mean_mm": 0.0,
+  "regen_24h_max_mm": 0.0,
+  "days": [
+    {
+      "day": "2026-04-18",
+      "stufe": "gelb",
+      "emoji": "😐",
+      "begruendung": "Pegel 48 cm — Ausleitungen umtragen",
+      "level_cm": 48.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 1.0
+    },
+    {
+      "day": "2026-04-19",
+      "stufe": "gelb",
+      "emoji": "😐",
+      "begruendung": "Pegel 48 cm — Ausleitungen umtragen",
+      "level_cm": 48.0,
+      "regen_24h_mm": 1.32,
+      "confidence": 1.0
+    },
+    {
+      "day": "2026-04-20",
+      "stufe": "gelb",
+      "emoji": "😐",
+      "begruendung": "Pegel 48 cm — Ausleitungen umtragen",
+      "level_cm": 48.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.8
+    },
+    {
+      "day": "2026-04-21",
+      "stufe": "gelb",
+      "emoji": "😐",
+      "begruendung": "Pegel 48 cm — Ausleitungen umtragen",
+      "level_cm": 48.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.6
+    },
+    {
+      "day": "2026-04-22",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 48.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.3999999999999999
+    },
+    {
+      "day": "2026-04-23",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 48.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.19999999999999996
+    },
+    {
+      "day": "2026-04-24",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 48.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.0
+    },
+    {
+      "day": "2026-04-25",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 48.0,
+      "regen_24h_mm": 0,
+      "confidence": 0.0
+    }
+  ]
+}
