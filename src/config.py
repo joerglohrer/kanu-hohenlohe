@@ -26,6 +26,22 @@ class Config:
 
 
 REQUIRED = {"gauges", "thresholds", "catchment_geojson", "cron"}
+REQUIRED_THRESHOLDS = {"min_cm", "komfort_cm", "hochwasser_cm",
+                       "max_regen_24h_mm", "max_anstieg_cm_per_h"}
+
+
+def _as_int(name: str, v):
+    try:
+        return int(v)
+    except (TypeError, ValueError) as e:
+        raise ConfigError(f"{name} must be an integer, got {v!r}") from e
+
+
+def _as_float(name: str, v):
+    try:
+        return float(v)
+    except (TypeError, ValueError) as e:
+        raise ConfigError(f"{name} must be a number, got {v!r}") from e
 
 
 def load_config(path: Path) -> Config:
@@ -37,23 +53,36 @@ def load_config(path: Path) -> Config:
         raise ConfigError(f"missing keys: {sorted(missing)}")
 
     gauges = raw["gauges"]
+    if not isinstance(gauges, dict):
+        raise ConfigError("gauges must be a mapping")
     if not {"doerzbach", "unterregenbach"} <= gauges.keys():
         raise ConfigError("gauges must include doerzbach and unterregenbach")
 
     t = raw["thresholds"]
+    if not isinstance(t, dict):
+        raise ConfigError("thresholds must be a mapping")
+    missing_t = REQUIRED_THRESHOLDS - t.keys()
+    if missing_t:
+        raise ConfigError(f"missing threshold keys: {sorted(missing_t)}")
+
+    hw = t["hochwasser_cm"]
     thresholds = Thresholds(
-        min_cm=int(t["min_cm"]),
-        komfort_cm=int(t["komfort_cm"]),
-        hochwasser_cm=int(t["hochwasser_cm"]) if t.get("hochwasser_cm") is not None else None,
-        max_regen_24h_mm=float(t["max_regen_24h_mm"]),
-        max_anstieg_cm_per_h=float(t["max_anstieg_cm_per_h"]),
+        min_cm=_as_int("min_cm", t["min_cm"]),
+        komfort_cm=_as_int("komfort_cm", t["komfort_cm"]),
+        hochwasser_cm=_as_int("hochwasser_cm", hw) if hw is not None else None,
+        max_regen_24h_mm=_as_float("max_regen_24h_mm", t["max_regen_24h_mm"]),
+        max_anstieg_cm_per_h=_as_float("max_anstieg_cm_per_h", t["max_anstieg_cm_per_h"]),
     )
     if thresholds.komfort_cm < thresholds.min_cm:
         raise ConfigError("komfort_cm must be >= min_cm")
+
+    cron = raw["cron"]
+    if not isinstance(cron, dict) or "timezone" not in cron:
+        raise ConfigError("cron.timezone is required")
 
     return Config(
         gauges=dict(gauges),
         thresholds=thresholds,
         catchment_geojson=str(raw["catchment_geojson"]),
-        timezone=str(raw["cron"]["timezone"]),
+        timezone=str(cron["timezone"]),
     )
