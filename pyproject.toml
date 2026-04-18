@@ -1,0 +1,22 @@
+[project]
+name = "kanu-hohenlohe"
+version = "0.1.0"
+description = "Jagst canoe traffic-light: pegel + weather → ampel + push"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.31",
+    "pyyaml>=6.0",
+    "shapely>=2.0",
+]
+
+[project.optional-dependencies]
+backtest = ["pandas>=2.1"]
+dev = ["pytest>=8.0", "pytest-mock>=3.12"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
