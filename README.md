@@ -7,7 +7,9 @@ auf den [Pegel Dörzbach](https://www.hvz.baden-wuerttemberg.de/pegel.html?id=00
 holt die Wettervorhersage für das Einzugsgebiet der oberen Jagst und zeigt auf
 einem öffentlichen Dashboard eine Ampel für heute und die kommenden 7 Tage.
 
-🟢 **Live-Dashboard:** `https://<user>.github.io/kanu-hohenlohe/` (bitte den Fork-Benutzernamen einsetzen)
+🟢 **Live-Dashboard:** <https://joerglohrer.github.io/kanu-hohenlohe/>
+
+_(Für eigene Forks: URL mit dem eigenen GitHub-Usernamen ersetzen.)_
 
 ## Die Ampel
 

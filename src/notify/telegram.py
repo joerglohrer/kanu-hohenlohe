@@ -68,7 +68,7 @@ def compose_message(status: dict) -> str:
     days = status.get("days", [])
     day_str = " · ".join(f"{d.get('day', '—')[-5:]} {d.get('emoji', '?')}" for d in days[:5])
     level_part = f"{level:.0f} cm" if level is not None else "—"
-    return f"🛶 Jagst Dörzbach: {level_part}\n{day_str}\nhttps://<user>.github.io/kanu-hohenlohe/"
+    return f"🛶 Jagst Dörzbach: {level_part}\n{day_str}\nhttps://joerglohrer.github.io/kanu-hohenlohe/"
 
 
 def send_push(text: str) -> None:
