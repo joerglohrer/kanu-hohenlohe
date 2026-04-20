@@ -1,24 +1,15 @@
 {
-  "generated_at": "2026-04-19T19:38:22.560168+00:00",
+  "generated_at": "2026-04-20T05:38:11.681850+00:00",
   "latest_level_cm": 48.0,
-  "latest_q_m3s": 4.38,
+  "latest_q_m3s": 4.24,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-04-19T21:30:00+02:00",
+  "hvz_last_ts": "2026-04-20T07:30:00+02:00",
   "hmo_stufe_1_cm": 220,
-  "regen_24h_mean_mm": 0.21,
-  "regen_24h_max_mm": 3.9,
+  "regen_24h_mean_mm": 0.0,
+  "regen_24h_max_mm": 0.0,
   "weather_stale": false,
   "days": [
-    {
-      "day": "2026-04-19",
-      "stufe": "gelb",
-      "emoji": "😐",
-      "begruendung": "Pegel 48 cm — Ausleitungen umtragen",
-      "level_cm": 48.0,
-      "regen_24h_mm": 4.9799999999999995,
-      "confidence": 1.0
-    },
     {
       "day": "2026-04-20",
       "stufe": "gelb",
@@ -34,8 +25,8 @@
       "emoji": "😐",
       "begruendung": "Pegel 48 cm — Ausleitungen umtragen",
       "level_cm": 48.0,
-      "regen_24h_mm": 0.1,
-      "confidence": 0.8
+      "regen_24h_mm": 0.37,
+      "confidence": 1.0
     },
     {
       "day": "2026-04-22",
@@ -44,16 +35,16 @@
       "begruendung": "Pegel 48 cm — Ausleitungen umtragen",
       "level_cm": 48.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.6
+      "confidence": 0.8
     },
     {
       "day": "2026-04-23",
-      "stufe": "ungewiss",
-      "emoji": "·",
-      "begruendung": "Prognose zu unsicher",
+      "stufe": "gelb",
+      "emoji": "😐",
+      "begruendung": "Pegel 48 cm — Ausleitungen umtragen",
       "level_cm": 48.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.3999999999999999
+      "confidence": 0.6
     },
     {
       "day": "2026-04-24",
@@ -62,7 +53,7 @@
       "begruendung": "Prognose zu unsicher",
       "level_cm": 48.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.19999999999999996
+      "confidence": 0.3999999999999999
     },
     {
       "day": "2026-04-25",
@@ -71,10 +62,19 @@
       "begruendung": "Prognose zu unsicher",
       "level_cm": 48.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.0
+      "confidence": 0.19999999999999996
     },
     {
       "day": "2026-04-26",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 48.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.0
+    },
+    {
+      "day": "2026-04-27",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
