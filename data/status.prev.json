@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-04-21T13:19:23.733510+00:00",
+  "generated_at": "2026-04-21T14:45:11.651305+00:00",
   "latest_level_cm": 47.0,
   "latest_q_m3s": 4.09,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-04-21T15:00:00+02:00",
+  "hvz_last_ts": "2026-04-21T16:30:00+02:00",
   "hmo_stufe_1_cm": 220,
   "regen_24h_mean_mm": 0.03,
-  "regen_24h_max_mm": 1.3,
+  "regen_24h_max_mm": 1.9,
   "weather_stale": false,
   "days": [
     {
