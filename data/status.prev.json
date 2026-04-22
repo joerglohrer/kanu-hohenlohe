@@ -1,30 +1,21 @@
 {
-  "generated_at": "2026-04-21T20:00:52.832984+00:00",
-  "latest_level_cm": 47.0,
-  "latest_q_m3s": 3.96,
+  "generated_at": "2026-04-22T05:23:02.440473+00:00",
+  "latest_level_cm": 46.0,
+  "latest_q_m3s": 3.77,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-04-21T21:45:00+02:00",
+  "hvz_last_ts": "2026-04-22T07:15:00+02:00",
   "hmo_stufe_1_cm": 220,
-  "regen_24h_mean_mm": 0.03,
-  "regen_24h_max_mm": 1.9,
+  "regen_24h_mean_mm": 0.0,
+  "regen_24h_max_mm": 0.0,
   "weather_stale": false,
   "days": [
-    {
-      "day": "2026-04-21",
-      "stufe": "gelb",
-      "emoji": "😐",
-      "begruendung": "Pegel 47 cm — Ausleitungen umtragen",
-      "level_cm": 47.0,
-      "regen_24h_mm": 0.73,
-      "confidence": 1.0
-    },
     {
       "day": "2026-04-22",
       "stufe": "gelb",
       "emoji": "😐",
-      "begruendung": "Pegel 47 cm — Ausleitungen umtragen",
-      "level_cm": 47.0,
+      "begruendung": "Pegel 46 cm — Ausleitungen umtragen",
+      "level_cm": 46.0,
       "regen_24h_mm": 0.0,
       "confidence": 1.0
     },
@@ -32,53 +23,62 @@
       "day": "2026-04-23",
       "stufe": "gelb",
       "emoji": "😐",
-      "begruendung": "Pegel 47 cm — Ausleitungen umtragen",
-      "level_cm": 47.0,
+      "begruendung": "Pegel 46 cm — Ausleitungen umtragen",
+      "level_cm": 46.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.8
+      "confidence": 1.0
     },
     {
       "day": "2026-04-24",
       "stufe": "gelb",
       "emoji": "😐",
-      "begruendung": "Pegel 47 cm — Ausleitungen umtragen",
-      "level_cm": 47.0,
+      "begruendung": "Pegel 46 cm — Ausleitungen umtragen",
+      "level_cm": 46.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.6
+      "confidence": 0.8
     },
     {
       "day": "2026-04-25",
-      "stufe": "ungewiss",
-      "emoji": "·",
-      "begruendung": "Prognose zu unsicher",
-      "level_cm": 47.0,
+      "stufe": "gelb",
+      "emoji": "😐",
+      "begruendung": "Pegel 46 cm — Ausleitungen umtragen",
+      "level_cm": 46.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.3999999999999999
+      "confidence": 0.6
     },
     {
       "day": "2026-04-26",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
-      "level_cm": 47.0,
+      "level_cm": 46.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.19999999999999996
+      "confidence": 0.3999999999999999
     },
     {
       "day": "2026-04-27",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
-      "level_cm": 47.0,
+      "level_cm": 46.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.0
+      "confidence": 0.19999999999999996
     },
     {
       "day": "2026-04-28",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
-      "level_cm": 47.0,
+      "level_cm": 46.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.0
+    },
+    {
+      "day": "2026-04-29",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 46.0,
       "regen_24h_mm": 0,
       "confidence": 0.0
     }
