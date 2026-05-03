@@ -1150,5 +1150,149 @@
     "precip_mm": 0.0,
     "max_precip_mm": 0.0,
     "cloud_cover": 99
+  },
+  {
+    "ts": "2026-05-09T00:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 76
+  },
+  {
+    "ts": "2026-05-09T01:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 88
+  },
+  {
+    "ts": "2026-05-09T02:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T03:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T04:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T05:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T06:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T07:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T08:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T09:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T10:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 99
+  },
+  {
+    "ts": "2026-05-09T11:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 99
+  },
+  {
+    "ts": "2026-05-09T12:00:00",
+    "precip_mm": 0.02,
+    "max_precip_mm": 0.1,
+    "cloud_cover": 99
+  },
+  {
+    "ts": "2026-05-09T13:00:00",
+    "precip_mm": 0.02,
+    "max_precip_mm": 0.1,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T14:00:00",
+    "precip_mm": 0.02,
+    "max_precip_mm": 0.1,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T15:00:00",
+    "precip_mm": 0.02,
+    "max_precip_mm": 0.1,
+    "cloud_cover": 94
+  },
+  {
+    "ts": "2026-05-09T16:00:00",
+    "precip_mm": 0.02,
+    "max_precip_mm": 0.1,
+    "cloud_cover": 89
+  },
+  {
+    "ts": "2026-05-09T17:00:00",
+    "precip_mm": 0.02,
+    "max_precip_mm": 0.1,
+    "cloud_cover": 84
+  },
+  {
+    "ts": "2026-05-09T18:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 89
+  },
+  {
+    "ts": "2026-05-09T19:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 94
+  },
+  {
+    "ts": "2026-05-09T20:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 100
+  },
+  {
+    "ts": "2026-05-09T21:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 98
+  },
+  {
+    "ts": "2026-05-09T22:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 96
+  },
+  {
+    "ts": "2026-05-09T23:00:00",
+    "precip_mm": 0.0,
+    "max_precip_mm": 0.0,
+    "cloud_cover": 95
   }
 ]
