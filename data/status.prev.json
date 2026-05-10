@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-10T15:50:48.851279+00:00",
+  "generated_at": "2026-05-10T16:47:50.926113+00:00",
   "latest_level_cm": 43.0,
-  "latest_q_m3s": 3.06,
+  "latest_q_m3s": 3.14,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-05-10T17:45:00+02:00",
+  "hvz_last_ts": "2026-05-10T18:30:00+02:00",
   "hmo_stufe_1_cm": 220,
-  "regen_24h_mean_mm": 0.23,
-  "regen_24h_max_mm": 6.1,
+  "regen_24h_mean_mm": 0.12,
+  "regen_24h_max_mm": 5.9,
   "weather_stale": false,
   "days": [
     {
@@ -16,7 +16,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 43 cm — Ausleitungen umtragen",
       "level_cm": 43.0,
-      "regen_24h_mm": 5.54,
+      "regen_24h_mm": 2.9099999999999997,
       "confidence": 1.0
     },
     {
@@ -25,7 +25,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 43 cm — Ausleitungen umtragen",
       "level_cm": 43.0,
-      "regen_24h_mm": 5.2700000000000005,
+      "regen_24h_mm": 7.74,
       "confidence": 1.0
     },
     {
@@ -34,7 +34,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 43 cm — Ausleitungen umtragen",
       "level_cm": 43.0,
-      "regen_24h_mm": 1.56,
+      "regen_24h_mm": 1.61,
       "confidence": 0.8
     },
     {
@@ -43,7 +43,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 43 cm — Ausleitungen umtragen",
       "level_cm": 43.0,
-      "regen_24h_mm": 0.24,
+      "regen_24h_mm": 1.44,
       "confidence": 0.6
     },
     {
@@ -52,7 +52,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 43.0,
-      "regen_24h_mm": 3.2399999999999998,
+      "regen_24h_mm": 1.89,
       "confidence": 0.3999999999999999
     },
     {
@@ -61,7 +61,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 43.0,
-      "regen_24h_mm": 0.15000000000000002,
+      "regen_24h_mm": 1.4400000000000002,
       "confidence": 0.19999999999999996
     },
     {
@@ -70,7 +70,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 43.0,
-      "regen_24h_mm": 0.33,
+      "regen_24h_mm": 11.85,
       "confidence": 0.0
     },
     {
