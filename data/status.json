@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-27T07:02:00.184082+00:00",
+  "generated_at": "2026-05-27T07:58:30.813656+00:00",
   "latest_level_cm": 36.0,
-  "latest_q_m3s": 1.74,
+  "latest_q_m3s": 1.71,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-05-27T08:55:00+02:00",
+  "hvz_last_ts": "2026-05-27T09:50:00+02:00",
   "hmo_stufe_1_cm": 220,
   "regen_24h_mean_mm": 0.0,
   "regen_24h_max_mm": 0.0,
