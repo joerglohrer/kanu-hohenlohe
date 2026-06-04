@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-04T07:22:35.862636+00:00",
+  "generated_at": "2026-06-04T08:15:16.403527+00:00",
   "latest_level_cm": 45.0,
-  "latest_q_m3s": 3.47,
+  "latest_q_m3s": 3.49,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-06-04T09:15:00+02:00",
+  "hvz_last_ts": "2026-06-04T10:05:00+02:00",
   "hmo_stufe_1_cm": 220,
-  "regen_24h_mean_mm": 0.19,
-  "regen_24h_max_mm": 3.7,
+  "regen_24h_mean_mm": 0.32,
+  "regen_24h_max_mm": 7.3,
   "weather_stale": false,
   "days": [
     {
@@ -16,7 +16,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 45 cm — Ausleitungen umtragen",
       "level_cm": 45.0,
-      "regen_24h_mm": 4.49,
+      "regen_24h_mm": 7.7,
       "confidence": 1.0
     },
     {
@@ -25,7 +25,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 45 cm — Ausleitungen umtragen",
       "level_cm": 45.0,
-      "regen_24h_mm": 0.45,
+      "regen_24h_mm": 2.18,
       "confidence": 1.0
     },
     {
