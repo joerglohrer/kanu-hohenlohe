@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-06T13:24:54.621106+00:00",
+  "generated_at": "2026-06-06T14:26:38.989307+00:00",
   "latest_level_cm": 39.0,
-  "latest_q_m3s": 2.3,
+  "latest_q_m3s": 2.32,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-06-06T15:20:00+02:00",
+  "hvz_last_ts": "2026-06-06T16:15:00+02:00",
   "hmo_stufe_1_cm": 220,
   "regen_24h_mean_mm": 0.0,
-  "regen_24h_max_mm": 0.1,
+  "regen_24h_max_mm": 0.2,
   "weather_stale": false,
   "days": [
     {
@@ -16,7 +16,7 @@
       "emoji": "🚫",
       "begruendung": "Pegel 39 cm unter Minimum 40 cm",
       "level_cm": 39.0,
-      "regen_24h_mm": 0.03,
+      "regen_24h_mm": 0.060000000000000005,
       "confidence": 1.0
     },
     {
