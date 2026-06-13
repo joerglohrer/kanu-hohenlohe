@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-13T06:56:38.835993+00:00",
+  "generated_at": "2026-06-13T07:41:51.254257+00:00",
   "latest_level_cm": 47.0,
-  "latest_q_m3s": 4.07,
+  "latest_q_m3s": 4.18,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-06-13T08:50:00+02:00",
+  "hvz_last_ts": "2026-06-13T09:35:00+02:00",
   "hmo_stufe_1_cm": 220,
   "regen_24h_mean_mm": 0.01,
   "regen_24h_max_mm": 0.7,
@@ -25,7 +25,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 47 cm — Ausleitungen umtragen",
       "level_cm": 47.0,
-      "regen_24h_mm": 0.0,
+      "regen_24h_mm": 0.01,
       "confidence": 1.0
     },
     {
