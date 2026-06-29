@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-29T18:05:26.047922+00:00",
+  "generated_at": "2026-06-29T19:51:52.903642+00:00",
   "latest_level_cm": 29.0,
-  "latest_q_m3s": 0.86,
+  "latest_q_m3s": 0.85,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-06-29T20:00:00+02:00",
+  "hvz_last_ts": "2026-06-29T21:45:00+02:00",
   "hmo_stufe_1_cm": 220,
-  "regen_24h_mean_mm": 0.14,
-  "regen_24h_max_mm": 7.6,
+  "regen_24h_mean_mm": 0.33,
+  "regen_24h_max_mm": 15.4,
   "weather_stale": false,
   "days": [
     {
@@ -16,7 +16,7 @@
       "emoji": "🚫",
       "begruendung": "Pegel 29 cm unter Minimum 40 cm",
       "level_cm": 29.0,
-      "regen_24h_mm": 3.24,
+      "regen_24h_mm": 8.01,
       "confidence": 1.0
     },
     {
@@ -25,7 +25,7 @@
       "emoji": "🚫",
       "begruendung": "Pegel 29 cm unter Minimum 40 cm",
       "level_cm": 29.0,
-      "regen_24h_mm": 7.59,
+      "regen_24h_mm": 9.33,
       "confidence": 1.0
     },
     {
@@ -34,7 +34,7 @@
       "emoji": "🚫",
       "begruendung": "Pegel 29 cm unter Minimum 40 cm",
       "level_cm": 29.0,
-      "regen_24h_mm": 1.53,
+      "regen_24h_mm": 15.819999999999999,
       "confidence": 0.8
     },
     {
