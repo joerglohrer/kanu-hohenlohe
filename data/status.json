@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-11T14:15:53.916893+00:00",
+  "generated_at": "2026-08-11T15:56:56.192152+00:00",
   "latest_level_cm": 27.0,
-  "latest_q_m3s": 0.63,
+  "latest_q_m3s": 0.65,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-08-11T16:10:00+02:00",
+  "hvz_last_ts": "2026-08-11T17:50:00+02:00",
   "hmo_stufe_1_cm": 220,
   "regen_24h_mean_mm": 0.0,
   "regen_24h_max_mm": 0.0,
@@ -61,7 +61,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 27.0,
-      "regen_24h_mm": 9.57,
+      "regen_24h_mm": 10.21,
       "confidence": 0.19999999999999996
     },
     {
@@ -70,7 +70,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 27.0,
-      "regen_24h_mm": 9.87,
+      "regen_24h_mm": 0.0,
       "confidence": 0.0
     },
     {
