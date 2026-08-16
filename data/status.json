@@ -1,31 +1,22 @@
 {
-  "generated_at": "2026-08-15T19:17:37.031929+00:00",
+  "generated_at": "2026-08-16T03:43:42.496092+00:00",
   "latest_level_cm": 29.0,
-  "latest_q_m3s": 0.82,
+  "latest_q_m3s": 0.78,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-08-15T21:05:00+02:00",
+  "hvz_last_ts": "2026-08-16T05:30:00+02:00",
   "hmo_stufe_1_cm": 220,
-  "regen_24h_mean_mm": 0.0,
-  "regen_24h_max_mm": 0.1,
+  "regen_24h_mean_mm": 0.03,
+  "regen_24h_max_mm": 1.4,
   "weather_stale": false,
   "days": [
-    {
-      "day": "2026-08-15",
-      "stufe": "rot_wenig",
-      "emoji": "🚫",
-      "begruendung": "Pegel 29 cm unter Minimum 40 cm",
-      "level_cm": 29.0,
-      "regen_24h_mm": 0.02,
-      "confidence": 1.0
-    },
     {
       "day": "2026-08-16",
       "stufe": "rot_wenig",
       "emoji": "🚫",
       "begruendung": "Pegel 29 cm unter Minimum 40 cm",
       "level_cm": 29.0,
-      "regen_24h_mm": 1.07,
+      "regen_24h_mm": 0.72,
       "confidence": 1.0
     },
     {
@@ -34,8 +25,8 @@
       "emoji": "🚫",
       "begruendung": "Pegel 29 cm unter Minimum 40 cm",
       "level_cm": 29.0,
-      "regen_24h_mm": 0.96,
-      "confidence": 0.8
+      "regen_24h_mm": 0.67,
+      "confidence": 1.0
     },
     {
       "day": "2026-08-18",
@@ -43,17 +34,17 @@
       "emoji": "🚫",
       "begruendung": "Pegel 29 cm unter Minimum 40 cm",
       "level_cm": 29.0,
-      "regen_24h_mm": 8.65,
-      "confidence": 0.6
+      "regen_24h_mm": 1.01,
+      "confidence": 0.8
     },
     {
       "day": "2026-08-19",
-      "stufe": "ungewiss",
-      "emoji": "·",
-      "begruendung": "Prognose zu unsicher",
+      "stufe": "rot_wenig",
+      "emoji": "🚫",
+      "begruendung": "Pegel 29 cm unter Minimum 40 cm",
       "level_cm": 29.0,
-      "regen_24h_mm": 21.0,
-      "confidence": 0.3999999999999999
+      "regen_24h_mm": 14.19,
+      "confidence": 0.6
     },
     {
       "day": "2026-08-20",
@@ -61,8 +52,8 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 29.0,
-      "regen_24h_mm": 1.86,
-      "confidence": 0.19999999999999996
+      "regen_24h_mm": 11.67,
+      "confidence": 0.3999999999999999
     },
     {
       "day": "2026-08-21",
@@ -71,10 +62,19 @@
       "begruendung": "Prognose zu unsicher",
       "level_cm": 29.0,
       "regen_24h_mm": 18.96,
-      "confidence": 0.0
+      "confidence": 0.19999999999999996
     },
     {
       "day": "2026-08-22",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 29.0,
+      "regen_24h_mm": 1.5,
+      "confidence": 0.0
+    },
+    {
+      "day": "2026-08-23",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
