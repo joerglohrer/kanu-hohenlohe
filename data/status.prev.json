@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-24T15:35:03.578528+00:00",
+  "generated_at": "2026-08-24T16:29:23.684687+00:00",
   "latest_level_cm": 35.0,
-  "latest_q_m3s": 1.66,
+  "latest_q_m3s": 1.58,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-08-24T17:30:00+02:00",
+  "hvz_last_ts": "2026-08-24T18:25:00+02:00",
   "hmo_stufe_1_cm": 220,
-  "regen_24h_mean_mm": 0.01,
-  "regen_24h_max_mm": 0.3,
+  "regen_24h_mean_mm": 0.0,
+  "regen_24h_max_mm": 0.2,
   "weather_stale": false,
   "days": [
     {
@@ -16,7 +16,7 @@
       "emoji": "🚫",
       "begruendung": "Pegel 35 cm unter Minimum 40 cm",
       "level_cm": 35.0,
-      "regen_24h_mm": 0.13,
+      "regen_24h_mm": 0.06,
       "confidence": 1.0
     },
     {
@@ -25,7 +25,7 @@
       "emoji": "🚫",
       "begruendung": "Pegel 35 cm unter Minimum 40 cm",
       "level_cm": 35.0,
-      "regen_24h_mm": 8.83,
+      "regen_24h_mm": 10.18,
       "confidence": 1.0
     },
     {
@@ -34,7 +34,7 @@
       "emoji": "🚫",
       "begruendung": "Pegel 35 cm unter Minimum 40 cm",
       "level_cm": 35.0,
-      "regen_24h_mm": 0.22,
+      "regen_24h_mm": 0.0,
       "confidence": 0.8
     },
     {
@@ -43,7 +43,7 @@
       "emoji": "🚫",
       "begruendung": "Pegel 35 cm unter Minimum 40 cm",
       "level_cm": 35.0,
-      "regen_24h_mm": 0.06,
+      "regen_24h_mm": 0.03,
       "confidence": 0.6
     },
     {
@@ -52,7 +52,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 35.0,
-      "regen_24h_mm": 14.28,
+      "regen_24h_mm": 7.05,
       "confidence": 0.3999999999999999
     },
     {
@@ -61,7 +61,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 35.0,
-      "regen_24h_mm": 7.66,
+      "regen_24h_mm": 0.0,
       "confidence": 0.19999999999999996
     },
     {
@@ -70,7 +70,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 35.0,
-      "regen_24h_mm": 2.16,
+      "regen_24h_mm": 0.66,
       "confidence": 0.0
     },
     {
