@@ -1,24 +1,15 @@
 {
-  "generated_at": "2026-11-05T20:26:29.855704+00:00",
+  "generated_at": "2026-11-06T10:19:41.135044+00:00",
   "latest_level_cm": 36.0,
-  "latest_q_m3s": 1.78,
+  "latest_q_m3s": 1.71,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-11-05T21:15:00+01:00",
+  "hvz_last_ts": "2026-11-06T11:10:00+01:00",
   "hmo_stufe_1_cm": 220,
   "regen_24h_mean_mm": 0.0,
   "regen_24h_max_mm": 0.0,
   "weather_stale": false,
   "days": [
-    {
-      "day": "2026-11-05",
-      "stufe": "rot_wenig",
-      "emoji": "🚫",
-      "begruendung": "Pegel 36 cm unter Minimum 40 cm",
-      "level_cm": 36.0,
-      "regen_24h_mm": 0.0,
-      "confidence": 1.0
-    },
     {
       "day": "2026-11-06",
       "stufe": "rot_wenig",
@@ -35,10 +26,19 @@
       "begruendung": "Pegel 36 cm unter Minimum 40 cm",
       "level_cm": 36.0,
       "regen_24h_mm": 0.0,
-      "confidence": 0.8
+      "confidence": 1.0
     },
     {
       "day": "2026-11-08",
+      "stufe": "rot_wenig",
+      "emoji": "🚫",
+      "begruendung": "Pegel 36 cm unter Minimum 40 cm",
+      "level_cm": 36.0,
+      "regen_24h_mm": 0.03,
+      "confidence": 0.8
+    },
+    {
+      "day": "2026-11-09",
       "stufe": "rot_wenig",
       "emoji": "🚫",
       "begruendung": "Pegel 36 cm unter Minimum 40 cm",
@@ -47,22 +47,13 @@
       "confidence": 0.6
     },
     {
-      "day": "2026-11-09",
-      "stufe": "ungewiss",
-      "emoji": "·",
-      "begruendung": "Prognose zu unsicher",
-      "level_cm": 36.0,
-      "regen_24h_mm": 0.0,
-      "confidence": 0.3999999999999999
-    },
-    {
       "day": "2026-11-10",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 36.0,
-      "regen_24h_mm": 3.21,
-      "confidence": 0.19999999999999996
+      "regen_24h_mm": 4.79,
+      "confidence": 0.3999999999999999
     },
     {
       "day": "2026-11-11",
@@ -70,11 +61,20 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 36.0,
-      "regen_24h_mm": 2.34,
-      "confidence": 0.0
+      "regen_24h_mm": 2.25,
+      "confidence": 0.19999999999999996
     },
     {
       "day": "2026-11-12",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 36.0,
+      "regen_24h_mm": 0.94,
+      "confidence": 0.0
+    },
+    {
+      "day": "2026-11-13",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
