@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-14T17:37:26.297451+00:00",
+  "generated_at": "2026-11-14T18:37:21.444921+00:00",
   "latest_level_cm": 41.0,
-  "latest_q_m3s": 2.63,
+  "latest_q_m3s": 2.65,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-11-14T18:25:00+01:00",
+  "hvz_last_ts": "2026-11-14T19:30:00+01:00",
   "hmo_stufe_1_cm": 220,
   "regen_24h_mean_mm": 0.0,
   "regen_24h_max_mm": 0.0,
-  "weather_stale": false,
+  "weather_stale": true,
   "days": [
     {
       "day": "2026-11-14",
@@ -25,7 +25,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 41 cm — Ausleitungen umtragen",
       "level_cm": 41.0,
-      "regen_24h_mm": 2.44,
+      "regen_24h_mm": 0.0,
       "confidence": 1.0
     },
     {
@@ -34,7 +34,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 41 cm — Ausleitungen umtragen",
       "level_cm": 41.0,
-      "regen_24h_mm": 9.49,
+      "regen_24h_mm": 0.0,
       "confidence": 0.8
     },
     {
@@ -43,7 +43,7 @@
       "emoji": "😐",
       "begruendung": "Pegel 41 cm — Ausleitungen umtragen",
       "level_cm": 41.0,
-      "regen_24h_mm": 23.06,
+      "regen_24h_mm": 0.0,
       "confidence": 0.6
     },
     {
@@ -52,7 +52,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 41.0,
-      "regen_24h_mm": 20.14,
+      "regen_24h_mm": 0.0,
       "confidence": 0.3999999999999999
     },
     {
@@ -61,7 +61,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 41.0,
-      "regen_24h_mm": 9.040000000000001,
+      "regen_24h_mm": 0.0,
       "confidence": 0.19999999999999996
     },
     {
@@ -70,7 +70,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 41.0,
-      "regen_24h_mm": 11.27,
+      "regen_24h_mm": 0.0,
       "confidence": 0.0
     },
     {
@@ -79,7 +79,7 @@
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
       "level_cm": 41.0,
-      "regen_24h_mm": 0,
+      "regen_24h_mm": 0.0,
       "confidence": 0.0
     }
   ]
