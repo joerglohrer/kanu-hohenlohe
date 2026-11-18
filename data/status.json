@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-17T21:28:14.265662+00:00",
-  "latest_level_cm": 59.0,
-  "latest_q_m3s": 9.12,
+  "generated_at": "2026-11-18T11:03:08.594340+00:00",
+  "latest_level_cm": 65.0,
+  "latest_q_m3s": 12.2,
   "tendenz_cm_per_h": 0.0,
   "hvz_stale": false,
-  "hvz_last_ts": "2026-11-17T22:15:00+01:00",
+  "hvz_last_ts": "2026-11-18T11:55:00+01:00",
   "hmo_stufe_1_cm": 220,
-  "regen_24h_mean_mm": 1.0,
-  "regen_24h_max_mm": 4.9,
+  "regen_24h_mean_mm": 0.54,
+  "regen_24h_max_mm": 5.1,
   "weather_stale": false,
   "days": [
-    {
-      "day": "2026-11-17",
-      "stufe": "gelb",
-      "emoji": "😐",
-      "begruendung": "Pegel 59 cm — Ausleitungen umtragen",
-      "level_cm": 59.0,
-      "regen_24h_mm": 24.09,
-      "confidence": 1.0
-    },
     {
       "day": "2026-11-18",
       "stufe": "gelb",
       "emoji": "😐",
-      "begruendung": "Pegel 59 cm — Ausleitungen umtragen",
-      "level_cm": 59.0,
-      "regen_24h_mm": 4.69,
+      "begruendung": "Regen im Einzugsgebiet 12.9 mm/24h",
+      "level_cm": 65.0,
+      "regen_24h_mm": 12.9,
       "confidence": 1.0
     },
     {
       "day": "2026-11-19",
       "stufe": "gelb",
       "emoji": "😐",
-      "begruendung": "Pegel 59 cm — Ausleitungen umtragen",
-      "level_cm": 59.0,
-      "regen_24h_mm": 10.790000000000001,
-      "confidence": 0.8
+      "begruendung": "Regen im Einzugsgebiet 9.5 mm/24h",
+      "level_cm": 65.0,
+      "regen_24h_mm": 9.540000000000001,
+      "confidence": 1.0
     },
     {
       "day": "2026-11-20",
       "stufe": "gelb",
       "emoji": "😐",
-      "begruendung": "Pegel 59 cm — Ausleitungen umtragen",
-      "level_cm": 59.0,
-      "regen_24h_mm": 2.67,
-      "confidence": 0.6
+      "begruendung": "Regen im Einzugsgebiet 14.9 mm/24h",
+      "level_cm": 65.0,
+      "regen_24h_mm": 14.88,
+      "confidence": 0.8
     },
     {
       "day": "2026-11-21",
-      "stufe": "ungewiss",
-      "emoji": "·",
-      "begruendung": "Prognose zu unsicher",
-      "level_cm": 59.0,
-      "regen_24h_mm": 11.57,
-      "confidence": 0.3999999999999999
+      "stufe": "gelb",
+      "emoji": "😐",
+      "begruendung": "Regen im Einzugsgebiet 6.5 mm/24h",
+      "level_cm": 65.0,
+      "regen_24h_mm": 6.53,
+      "confidence": 0.6
     },
     {
       "day": "2026-11-22",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
-      "level_cm": 59.0,
-      "regen_24h_mm": 0.0,
-      "confidence": 0.19999999999999996
+      "level_cm": 65.0,
+      "regen_24h_mm": 1.77,
+      "confidence": 0.3999999999999999
     },
     {
       "day": "2026-11-23",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
-      "level_cm": 59.0,
-      "regen_24h_mm": 2.87,
-      "confidence": 0.0
+      "level_cm": 65.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.19999999999999996
     },
     {
       "day": "2026-11-24",
       "stufe": "ungewiss",
       "emoji": "·",
       "begruendung": "Prognose zu unsicher",
-      "level_cm": 59.0,
+      "level_cm": 65.0,
+      "regen_24h_mm": 0.0,
+      "confidence": 0.0
+    },
+    {
+      "day": "2026-11-25",
+      "stufe": "ungewiss",
+      "emoji": "·",
+      "begruendung": "Prognose zu unsicher",
+      "level_cm": 65.0,
       "regen_24h_mm": 0,
       "confidence": 0.0
     }
